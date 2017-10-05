@@ -1,0 +1,100 @@
+/**********************************
+GENERAL PRESETS
+***********************************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Josefin Slab', serif;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+input {
+  display: block;
+  width: 90%;
+  height: 40px;
+  margin: 30px auto 0;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+/**********************************
+GALLERY
+***********************************/
+
+#gallery ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+#gallery li {
+  flex-basis: 48.5%;
+}
+
+#gallery {
+  text-align: center;
+  color: #4a4a4a;
+  background-color: #fff;
+}
+
+#gallery div {
+  text-transform: none;
+  font-weight: 300;
+}
+
+#gallery div img {
+  max-width: 100%;
+  margin: 3px auto;
+}
+
+/**********************************
+TABLET MEDIA QUERIES
+***********************************/
+
+@media (min-width: 768px) {
+  input {
+    width: 45%;
+  }
+  #gallery {
+    padding: 0 30px;
+  }
+  #gallery li {
+    flex-basis: 33%;
+  }
+  #gallery div img {
+    margin: 15px auto;
+  }
+}
+
+/**********************************
+DESKTOP MEDIA QUERIES
+***********************************/
+
+@media (min-width: 1024px) {
+  input {
+    width: 40%;
+  }
+  #gallery li {
+    flex-basis: 25%;
+  }
+}
