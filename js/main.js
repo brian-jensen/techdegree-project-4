@@ -1,0 +1,1 @@
+$('.thumbnail-gallery a').simpleLightbox();
