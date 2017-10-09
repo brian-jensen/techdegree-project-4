@@ -30,6 +30,7 @@ input {
 
 a {
   text-decoration: none;
+  outline: none;
 }
 
 li {
@@ -69,15 +70,37 @@ GALLERY
   max-width: 100%;
   margin: 3px auto;
   border-radius: 3px;
-  box-shadow: 0 0 10px #222;
+  box-shadow: 0 0 15px #222;
 }
 
 #gallery div img:hover {
-  cursor: pointer;
   transform: rotate(1deg);
   box-shadow: 0 0 10px #777;
 }
 
+/**********************************
+FANCYBOX 3 STYLE OVERIDES
+***********************************/
+
+.fancybox-is-open .fancybox-bg {
+    opacity: 0.7;
+}
+.fancybox-caption-wrap {
+  display: flex;
+  margin: auto;
+
+}
+.fancybox-caption {
+  border: none;
+  flex: 1;
+  letter-spacing: .25em;
+  max-width: 600px;
+  margin: auto;
+}
+
+.fancybox-arrow {
+    opacity: .8;
+}
 /**********************************
 TABLET MEDIA QUERIES
 ***********************************/
@@ -95,8 +118,10 @@ TABLET MEDIA QUERIES
   #gallery div img {
     margin: 15px auto;
   }
+  .fancybox-image, .fancybox-spaceball {
+    max-height: 94%;
+  }
 }
-
 /**********************************
 DESKTOP MEDIA QUERIES
 ***********************************/
@@ -108,4 +133,5 @@ DESKTOP MEDIA QUERIES
   #gallery li {
     flex-basis: 25%;
   }
+
 }
