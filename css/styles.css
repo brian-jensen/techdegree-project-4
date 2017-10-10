@@ -6,26 +6,42 @@ GENERAL PRESETS
   box-sizing: border-box;
 }
 
+html {
+    overflow-y: scroll;
+}
+
 body {
   margin: 0;
-  background-image: url("../images/random_grey_variations.png");
+  background-image: url("../images/non-gallery/random_grey_variations.png");
   font-family: 'Josefin Slab', serif;
   font-size: 14px;
   font-weight: 100;
 }
 
-.wrapper {
+#wrapper {
   max-width: 1024px;
   margin: 0 auto;
 }
 
 input {
   display: block;
+  background-image: url('../images/non-gallery/search-indicator-magnifying-glass.svg');
+  background-position: 5px 50%;
+  background-repeat: no-repeat;
   width: 90%;
   height: 40px;
+  padding-left: 35px;
   margin: 30px auto 0;
   border-radius: 5px;
+  font-size: 1rem;
   background-color: #f0f8ff;
+}
+
+#no-matches {
+  text-align: center;
+  display: none;
+  color: #fff;
+  text-shadow: 1px 1px 4px #000;
 }
 
 a {
@@ -48,7 +64,6 @@ GALLERY
 #gallery ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding: 0 10px;
 }
 
@@ -101,6 +116,7 @@ FANCYBOX 3 STYLE OVERIDES
 .fancybox-arrow {
     opacity: .8;
 }
+
 /**********************************
 TABLET MEDIA QUERIES
 ***********************************/
@@ -133,5 +149,4 @@ DESKTOP MEDIA QUERIES
   #gallery li {
     flex-basis: 25%;
   }
-
 }

@@ -11,13 +11,14 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div id="wrapper">
     <header>
-      <input type="text" name="search" id="search" placeholder="Search">
+      <input type="text" name="search" id="search" onkeyup="filterResults()" placeholder="Search">
+      <h1 id="no-matches">No matches found.</h1>
     </header>
     <main id="gallery">
       <div>
-        <ul>
+        <ul id="gallery-items">
           <li>
             <a data-fancybox="gallery" href="images/01.jpg" data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields." title="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
               <img src="images/thumbnails/01.jpg" alt="Hay Bales">
