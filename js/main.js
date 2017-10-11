@@ -47,6 +47,6 @@ function filterResults() {
       } else {
         noMatchesText.style.display = 'block';
       }
-      }
     }
   }
+}

@@ -7,7 +7,7 @@ GENERAL PRESETS
 }
 
 html {
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 body {
@@ -25,21 +25,21 @@ body {
 
 input {
   display: block;
-  background-image: url('../images/non-gallery/search-indicator-magnifying-glass.svg');
-  background-position: 5px 50%;
-  background-repeat: no-repeat;
   width: 90%;
   height: 40px;
-  padding-left: 35px;
   margin: 30px auto 0;
+  padding-left: 35px;
   border-radius: 5px;
-  font-size: 1rem;
   background-color: #f0f8ff;
+  background-image: url('../images/non-gallery/search-indicator-magnifying-glass.svg');
+  background-repeat: no-repeat;
+  background-position: 5px 50%;
+  font-size: 1rem;
 }
 
 #no-matches {
-  text-align: center;
   display: none;
+  text-align: center;
   color: #fff;
   text-shadow: 1px 1px 4px #000;
 }
@@ -98,23 +98,24 @@ FANCYBOX 3 STYLE OVERIDES
 ***********************************/
 
 .fancybox-is-open .fancybox-bg {
-    opacity: 0.7;
+  opacity: 0.7;
 }
+
 .fancybox-caption-wrap {
   display: flex;
   margin: auto;
-
 }
+
 .fancybox-caption {
-  border: none;
   flex: 1;
-  letter-spacing: .25em;
   max-width: 600px;
   margin: auto;
+  letter-spacing: .25em;
+  border: none;
 }
 
 .fancybox-arrow {
-    opacity: .8;
+  opacity: .8;
 }
 
 /**********************************
@@ -138,6 +139,7 @@ TABLET MEDIA QUERIES
     max-height: 94%;
   }
 }
+
 /**********************************
 DESKTOP MEDIA QUERIES
 ***********************************/
